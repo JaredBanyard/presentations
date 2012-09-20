@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Android App Anatomy</string>
+  <string name="publish_via_local_broadcast">Publish via LocalBroadcastManager</string>
+  <string name="publish_via_otto">Publish via Otto</string>
+</resources>
