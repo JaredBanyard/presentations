@@ -49,7 +49,11 @@ public class PublishFragment extends BaseFragment {
   }
 
   private void postViaOtto() {
-    bus.post(getCurrentLocation());
+    Location location = getCurrentLocation();
+    if (location != null) {
+      // Otto fails fast if you post null.
+      bus.post(location);
+    }
   }
 
   private Location getCurrentLocation() {
