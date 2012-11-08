@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:padding="8dp"
+    android:padding="16dp"
     >
-
-  <fragment
-      android:id="@+id/controls_fragment"
-      android:name="com.squareup.anatomy.PublishFragment"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="100"
-      />
-
-  <fragment
-      android:id="@+id/logging_fragment"
-      android:name="com.squareup.anatomy.SubscribeFragment"
-      android:layout_width="match_parent"
+  <Button
+      android:id="@+id/locations_button"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:text="@string/locations"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
       />
-
-</LinearLayout>
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:id="@+id/otto_help"
+      android:layout_alignParentRight="true"
+      android:layout_toRightOf="@+id/locations_button"
+      android:layout_marginLeft="8dp"
+      android:text="@string/otto_help"
+      />
+</RelativeLayout>

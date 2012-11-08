@@ -18,7 +18,7 @@ import java.util.Date;
 /**
  * Receives location events from {@link LocalBroadcastManager} or {@link com.squareup.otto.Bus}.
  */
-public class SubscribeFragment extends BaseFragment {
+public class LocationSubscribeFragment extends BaseFragment {
 
   private TextView locationTextView;
   private TextView timestampTextView;
@@ -52,7 +52,7 @@ public class SubscribeFragment extends BaseFragment {
   }
 
   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
-    return inflater.inflate(R.layout.subscribe_fragment, container, false);
+    return inflater.inflate(R.layout.location_subscribe_fragment, container, false);
   }
 
   @Override public void onViewCreated(View view, Bundle savedInstanceState) {

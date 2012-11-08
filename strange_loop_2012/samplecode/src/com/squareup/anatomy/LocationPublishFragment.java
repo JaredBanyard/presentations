@@ -15,13 +15,13 @@ import javax.inject.Inject;
  * Contains two buttons for posting the current location via {@link Bus}
  * or {@link LocalBroadcastManager}.
  */
-public class PublishFragment extends BaseFragment {
+public class LocationPublishFragment extends BaseFragment {
 
   @Inject Bus bus;
   @Inject LocationManager locationManager;
 
   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
-    return inflater.inflate(R.layout.publish_fragment, container, false);
+    return inflater.inflate(R.layout.location_publish_fragment, container, false);
   }
 
   @Override public void onViewCreated(View view, Bundle state) {
@@ -33,7 +33,7 @@ public class PublishFragment extends BaseFragment {
       }
     });
 
-    view.findViewById(R.id.otto_button).setOnClickListener(new View.OnClickListener() {
+    view.findViewById(R.id.locations_button).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         postViaOtto();
       }

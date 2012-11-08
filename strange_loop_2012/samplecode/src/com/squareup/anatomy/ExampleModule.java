@@ -10,8 +10,9 @@ import javax.inject.Singleton;
 @Module(
     entryPoints = {
         HomeActivity.class,
-        PublishFragment.class,
-        SubscribeFragment.class
+        LocationActivity.class,
+        LocationPublishFragment.class,
+        LocationSubscribeFragment.class
     }
 )
 public class ExampleModule {
