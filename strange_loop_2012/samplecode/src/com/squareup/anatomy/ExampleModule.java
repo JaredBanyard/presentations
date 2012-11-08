@@ -9,6 +9,7 @@ import javax.inject.Singleton;
 
 @Module(
     entryPoints = {
+        AccountActivity.class,
         HomeActivity.class,
         LocationActivity.class,
         LocationPublishFragment.class,

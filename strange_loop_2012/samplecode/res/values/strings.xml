@@ -5,4 +5,7 @@
   <string name="otto_help">Fragment-to-fragment communication via Otto.</string>
   <string name="publish_via_local_broadcast">Publish via LocalBroadcastManager</string>
   <string name="publish_via_otto">Publish via Otto</string>
+  <string name="producer">Producer</string>
+  <string name="producer_help">Otto @Producer demonstration.</string>
+  <string name="account">Account</string>
 </resources>
